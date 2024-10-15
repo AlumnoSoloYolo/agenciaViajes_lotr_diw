@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+header{
+    background-color: white;
+    background-color: rgb(30, 29, 29);
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+header > figure{
+
+max-height: 100px;
+position: relative;
+margin-left: 35px;
+}
+
+span{
+    position: absolute;
+    top: 50px;
+    color: #A08926;
+    left: 40px;
+}
+
+figure > .logo{
+/* max-width: 100%; */
+height: 80px;
+display: block;
+}
+
+
+
+.menu {
+    display: flex; /* Asegura que los elementos se muestren en fila */
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu > li {
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    padding: 4px;
+    margin-right: 100px;
+}
+
+
+
+/* El contenido dentro del li, como el texto del enlace */
+.menu > li > a {
+    color: #fff; /* Ajusta el color para mejor visibilidad */
+    display: block;
+    width: 120px;
+    height: 70px;
+    background-color: rgb(30, 29, 29);
+    font-size: 20px;
+    border-radius: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    line-height: 80px; /* Para centrar verticalmente el texto */
+}
+
+
+.menu > li > a:hover{
+   
+  font-size: 5em;
+  font-weight: bold;
+  background: linear-gradient(45deg, #b2955b, #f5e1a4, #d4af37, #f9d976,
+  #b2955b, #f5e1a4, #d4af37, #f9d976);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+    /* background: linear-gradient(
+        45deg, #b2955b, #f5e1a4, #d4af37, #f9d976,
+        #b2955b, #f5e1a4, #d4af37, #f9d976
+    ); */
+    animation: girar_colores 3s linear infinite; 
+}
+
+/* La animación para el efecto de movimiento de colores */
+@keyframes girar_colores {
+    0% {
+        background-position: 0 0; /* Comienza en el origen */
+    }
+    100% {
+        background-position: 400% 0; /* Desplaza el fondo a lo largo del eje X */
+    }
+}
+
+
+
+.separador {
+    position: relative;
+    height: 5px; /* Altura de la línea */
+    overflow: hidden; /* Asegura que el fondo no sobresalga */
+}
+
+.separador::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%; /* Ocupa toda la altura del separador */
+    background: linear-gradient(
+        45deg, #b2955b, #f5e1a4, #d4af37, #f9d976,
+        #b2955b, #f5e1a4, #d4af37, #f9d976
+    );
+    background-size: 400%; /* Aumenta el tamaño del fondo para el efecto de movimiento */
+    animation: girar_colores 30s linear infinite; /* Cambia a 10s para movimiento más lento */
+}
+
+
+
+/*main*/
+
+main {
+    background-color: rgb(30, 29, 29);
+    position: relative; /* Asegúrate de que el main sea relativo para que los elementos hijos se posicionen correctamente */
+    overflow: hidden; /* Asegura que nada sobresalga del contenedor */
+}
+
+.carrousel {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 500px;
+    position: relative; /* Permite que los elementos hijos se posicionen dentro */
+}
+
+.carrousel figure {
+    height: 500px;
+    width: 100%;
+     /* Asegura que el figure ocupe todo el ancho */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+    position: absolute;
+}
+
+.carrousel img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho */
+
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción y cubra el contenedor */
+}
+
+
+.carrousel span {
+    display: block;
+   position: relative;
+   font-size: 4rem;
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), /* Sombra negra */
+                 -1px -1px 5px rgba(255, 255, 255, 0.5);
+}
+
+
+.carrousel span:last-child {
+    display: block;
+    margin-top: 100px;
+    position: relative;
+    font-size: 4rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), /* Sombra negra */
+                  -1px -1px 5px rgba(255, 255, 255, 0.5);
+ }
+
+ .viajes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 50px;
+ }
+
+ .tarjeta {
+    height: 450px;
+    width: 300px;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 10px;
+    box-shadow: 
+        0 2px 5px rgba(0, 0, 0, 0.15),  /* Sombra exterior */
+        inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra interior */
+    transition: box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    box-shadow: 
+        0 5px 15px rgba(0, 0, 0, 0.2),   /* Sombra exterior al hacer hover */
+        inset 0 3px 7px rgba(0, 0, 0, 0.15); /* Sombra interior más pronunciada al hacer hover */
+}
+
+ .tarjeta > figure{
+    width: 50px;
+    height: 50px;
+ }
+
+ .tarjeta figure > img{
+    width: 130px;
+    height: 130px;
+    display: block;
+    border-radius: 50px;
+ }
+
+ h3 p {
+    color: white;
+ }
+
+
+ 

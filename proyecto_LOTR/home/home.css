@@ -45,6 +45,7 @@ header > figure > span{
     position: absolute;
     top: 60px;
     color: #A08926;
+    font-weight: bold;
     left: 48px;
 }
 /*----------------------------------------------------- Fin Logo -------------------------------------------------------------*/

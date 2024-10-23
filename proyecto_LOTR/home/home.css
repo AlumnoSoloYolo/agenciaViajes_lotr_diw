@@ -179,6 +179,150 @@ header > figure > span{
 
  /*------------------------------------------------ Fin hero --------------------------------------------------------------------*/
 
+ /*------------------------------------------------Inicio sección servicios-----------------------------------------------------*/
+
+ .servicios{
+    background-color: #0D4126;
+    padding: 30px;
+    justify-items: center;
+ }
+
+ .servicios h2{
+    text-align: center;
+    font-size: 3rem;
+    color: #A08926; 
+    margin-bottom: 20px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+ }
+
+ .servicios-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+ }
+
+
+ .servicios-grid article {
+    position: relative;
+    background-color: rgb(30, 29, 29);
+    border-radius: 15px;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    border: 3px solid #A08926;
+}
+
+
+.servicios-grid article  img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 5px solid #A08926;
+    position: relative; 
+    z-index: 1; 
+    transition: opacity 0.4s ease-in-out; }
+
+
+.servicios-grid article h3 {
+    color: #A08926;
+    margin-top: 10px;
+    position: relative; 
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.servicios-grid article::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg, #b2955b, #f5e1a4, #d4af37, #f9d976,
+        #b2955b, #f5e1a4, #d4af37, #f9d976
+    );
+    background-size: 800%;
+    border-radius: 15px;
+    filter: blur(8px);
+    z-index: 0; 
+    opacity: 0; 
+    transition: opacity 0.4s ease-in-out; 
+    animation: girar_colores 20s linear infinite; 
+}
+
+
+.servicios-grid article:hover::before {
+    opacity: 1; 
+}
+
+
+.servicios-grid article:hover h3 {
+    opacity: 0; /* Título desaparece al hacer hover */
+}
+
+
+.servicios-grid article:hover > img {
+    opacity: 0; /* Oculta la imagen al hacer hover */
+}
+
+/* Texto que se muestra sobre el fondo dorado */
+.servicios-grid article p {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    color: #2e2e2e;;  /
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-align: center;
+    z-index: 2; 
+    opacity: 0; 
+    transition: opacity 0.4s ease-in-out; 
+    padding: 20px;
+}
+
+
+.servicios-grid article:hover p {
+    opacity: 1; 
+}
+
+
+.servicios article button {
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    padding: 10px 20px;
+    background-color: #2e2e2e;; 
+    color: #c8b56e;  
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    opacity: 0; 
+    transition: opacity 0.4s ease-in-out; 
+    z-index: 3; 
+}
+
+.servicios article button:hover{
+    background-color: #ebcf9f;
+    color: #2e2e2e; 
+}
+
+/* Mostrar el botón al hacer hover */
+.servicios-grid article:hover button {
+    opacity: 1; /* Botón visible al hacer hover */
+    
+}
+
+
+
+ /*------------------------------------------------Fin sección servicios--------------------------------------------------------*/
+
  /*-----------------------------------------inicio sección de Destinos Populares------------------------------------------------ */
 
 .destinos {
@@ -187,7 +331,7 @@ header > figure > span{
     color: white; 
 }
 
-h2 {
+.destinos h2 {
     text-align: center;
     font-size: 3rem;
     color: #A08926; 
@@ -337,7 +481,8 @@ h2 {
 .guias-turisticos {
     background-color: #f9f9f9; 
     padding: 40px 20px; 
-    text-align: center; 
+    text-align: center;
+   
 }
 
 .guias-turisticos h2 {
@@ -474,6 +619,10 @@ h2 {
        
     }
 
+    .servicios-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
 
     .destinos-grid {

@@ -62,7 +62,7 @@ header > figure > span{
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    border: 2px solid #D4AF37;;
+    border: 2px solid #D4AF37;
     border-radius: 100%;
     position: relative;
     margin-right: 15px;
@@ -163,7 +163,7 @@ header > figure > span{
    position: relative;
    font-size: 4rem;
    text-shadow: 2px 8px 8px rgba(0, 0, 0, 0.9);
-   color: #A08926;
+   color: #D4AF37;
                  
 }
 
@@ -173,7 +173,7 @@ header > figure > span{
     position: relative;
     font-size: 3.5rem;
     text-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.9);
-    color: #A08926;
+    color: #D4AF37;
     
  }
 
@@ -260,22 +260,22 @@ header > figure > span{
 
 
 .servicios-grid article:hover h3 {
-    opacity: 0; /* Título desaparece al hacer hover */
+    opacity: 0;
 }
 
 
 .servicios-grid article:hover > img {
-    opacity: 0; /* Oculta la imagen al hacer hover */
+    opacity: 0; 
 }
 
-/* Texto que se muestra sobre el fondo dorado */
+
 .servicios-grid article p {
     position: absolute; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    color: #2e2e2e;;  /
+    color: #2e2e2e;;  
     font-weight: 800;
     font-size: 1.2rem;
     text-align: center;
@@ -473,9 +473,9 @@ header > figure > span{
 
 
 
-/*-------------------------------------Fin sección destinos----------------------------------------------------------------*/
+/*-------------------------------------Fin sección destinos-------------------------------------*/
 
-/*-------------------------------- Inicio sección guías turísticos------------------------------------------------*/
+/*-------------------------------- Inicio sección guías turísticos------------------------------*/
 
 
 .guias-turisticos {
@@ -571,8 +571,54 @@ header > figure > span{
     transform: scale(1.05); 
 }
 
+/*-----------------------------------Fin sercción guías turísticos-----------------------------------------*/
+
+/*------------------------------------ Inicio sección testimonios ---------------------------------------- */
 
 
+.testimonios-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px;
+}
+
+
+.testimonio{
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: #A08926;
+    padding: 15px;
+    border: 3px solid #A08926 ;
+}
+
+
+.testimonio img {
+    display: block; 
+    width: 100px;                  
+    height: 100px;                
+    border-radius: 50%;           
+    margin-right: 8px;            
+    border: 3px solid #A08926;     
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    object-fit: cover;     
+         
+}
+
+.contenido {
+    flex: 1;                      
+}
+.testimonio .rating span i{
+    font-size: 1.5rem;
+    color: #A08926 ;
+}
+
+.testimonio .contenido p{
+color: black;
+margin-top: 10px;
+}
 
 
 
@@ -635,4 +681,10 @@ header > figure > span{
          display: grid;
         grid-template-columns: 1fr;
     }
+
+
+    .testimonios-grid{
+        display: grid;
+       grid-template-columns: 1fr;
+   }
 }

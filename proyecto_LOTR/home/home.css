@@ -207,8 +207,6 @@ header > figure > span{
     background-color: rgb(30, 29, 29);
     border-radius: 15px;
     text-align: center;
-    width: 400px;
-    height: 400px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
     border: 3px solid #A08926;
 }
@@ -305,7 +303,8 @@ header > figure > span{
     cursor: pointer; 
     opacity: 0; 
     transition: opacity 0.4s ease-in-out; 
-    z-index: 3; 
+    margin-top: 10px;
+    z-index: 2; 
 }
 
 .servicios article button:hover{
@@ -579,7 +578,7 @@ header > figure > span{
 .testimonios-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 20px;
     padding: 20px;
 }
 

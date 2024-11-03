@@ -28,7 +28,7 @@ header{
 }
 
 
-/*----------------------------------------------------- Logo ----------------------------------------------------------------*/
+/*----------------------------------- Logo -----------------------------------------------*/
 
 header > figure {
     margin-left: 20px;
@@ -48,8 +48,8 @@ header > figure > span{
     font-weight: bold;
     left: 48px;
 }
-/*----------------------------------------------------- Fin Logo -------------------------------------------------------------*/
- /* ----------------------------------------------------- Menú ---------------------------------------------------------------*/
+/*------------------------------------- Fin Logo -------------------------------------------------*/
+ /* --------------------------------------- Menú------------------------------------------------*/
  
  .menu ul{
     display: flex;
@@ -108,15 +108,15 @@ header > figure > span{
 .menu li:hover span {
     top: 75px; 
     opacity: 0.9;
-    z-index: 2; 
+    z-index: 3; 
     height: auto;
     transition: all 300ms ease-in-out;
    
 }
 
-/*------------------------------------------------- Fin Menú -------------------------------------------------------------*/
+/*---------------------------------- Fin Menú ---------------------------------------------*/
 
-/* //////////////////////////////////////////////FIN DE HEADER/////////////////////////////////////////////////////////////////*/
+/* ////////////////////////////FIN DE HEADER//////////////////////////////////////////*/
 
 .separador {
     height: 3px;
@@ -126,9 +126,9 @@ header > figure > span{
     );
    
 }
-/* //////////////////////////////////////////// INICIO MAIN////////////////////////////////////////////////////////////*/
+/* //////////////////////////////////// INICIO MAIN//////////////////////////////////////////*/
 
-/* ------------------------------------------------ Hero --------------------------------------------------------------------------- */
+/* -------------------------------------- Hero ------------------------------- */
 
 .hero {
     position: relative;
@@ -176,17 +176,17 @@ header > figure > span{
     
  }
 
- /*------------------------------------------------ Fin hero --------------------------------------------------------------------*/
+ /*------------------------------- Fin hero ---------------------------------------*/
 
- /*------------------------------------------------Inicio sección servicios-----------------------------------------------------*/
+ /*--------------------------------Inicio sección servicios--------------------------*/
 
- .servicios{
+ #servicios{
     background-color: #0D4126;
     padding: 30px;
     justify-items: center;
  }
 
- .servicios h2{
+ #servicios h2{
     text-align: center;
     font-size: 3rem;
     color: #A08926; 
@@ -289,7 +289,7 @@ header > figure > span{
 }
 
 
-.servicios article button {
+#servicios article button {
     position: absolute; 
     bottom: 20px; 
     left: 50%; 
@@ -307,7 +307,7 @@ header > figure > span{
     z-index: 2; 
 }
 
-.servicios article button:hover{
+#servicios article button:hover{
     background-color: #ebcf9f;
     color: #2e2e2e; 
 }
@@ -324,13 +324,13 @@ header > figure > span{
 
  /*-----------------------------------------inicio sección de Destinos Populares------------------------------------------------ */
 
-.destinos {
+#destinos {
     padding: 40px;
     background-color: rgb(30, 29, 29); 
     color: white; 
 }
 
-.destinos h2 {
+#destinos h2 {
     text-align: center;
     font-size: 3rem;
     color: #A08926; 
@@ -375,7 +375,11 @@ header > figure > span{
 
 }
 
-.destino:hover h3, p{
+.destino:hover h3{
+    color: rgb(30, 29, 29);
+}
+
+.destino:hover p{
     color: rgb(30, 29, 29);
 }
 
@@ -398,6 +402,7 @@ header > figure > span{
     border-radius: 100%;
     overflow: hidden;
 }
+
 
 .destino:nth-child(4):hover::before{
     content: "";
@@ -477,14 +482,14 @@ header > figure > span{
 /*-------------------------------- Inicio sección guías turísticos------------------------------*/
 
 
-.guias-turisticos {
+#guias-turisticos {
     background-color: #f9f9f9; 
     padding: 40px 20px; 
     text-align: center;
    
 }
 
-.guias-turisticos h2 {
+#guias-turisticos h2 {
     font-size: 2.5rem; 
     margin-bottom: 30px; 
     color: #333; 
@@ -593,6 +598,14 @@ header > figure > span{
     border: 3px solid #A08926 ;
 }
 
+#testimonios h2 {
+   
+    text-align: center;
+    font-size: 3rem;
+    color: #A08926; 
+    margin:20px;
+}
+
 
 .testimonio img {
     display: block; 
@@ -619,32 +632,199 @@ color: black;
 margin-top: 10px;
 }
 
+/*----------------------------- fin sección testimonios----------------------------*/
+/*------------------------------Inicio sección contacto-----------------------------*/
+
+
+#contacto{
+    background-color: whitesmoke;
+    padding-top: 15px;
+}
+#contacto h2{
+    text-align: center;
+    font-size: 3rem;
+    color: #A08926; 
+    margin-bottom: 30px;
+    text-shadow: 0 4px 20px rgba(70, 68, 68, 0.8);
+}
+
+.contacto-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.formulario, .info-contacto {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #081521;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #333d47;
+}
+
+
+.info-contacto p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+.info-contacto a {
+    color: #9e8b20;
+    text-decoration: none;
+}
+
+.info-contacto a:hover {
+    text-decoration: underline;
+}
+
+.mapa{
+    margin: 15px;
+}
+
+
+/*---------------------------fin sección contacto---------------------------------*/
+/*------------------------------ Inicio footer-------------------------------*/
 
 
 
+footer {
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+}
 
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-items: center; 
+    text-align: center; 
+}
 
+.footer-grid h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
 
+.footer-grid p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+}
 
+.footer-grid a {
+    color: inherit; 
+    text-decoration: none;
+}
 
+.footer-grid a:hover {
+    color: inherit; 
+}
 
+.social-media {
+    display: flex;
+    gap: 15px;
+    justify-content: center; 
+}
 
+.social-media a {
+    color: #ccc;
+    font-size: 18px;
+}
 
+.pie {
+    background-color: #222;
+    color: #bbb;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    font-size: 12px;
+}
 
+/*--------------------------fin footer --------------------------------------------------------*/
 
+/*///////////////////////////MEDIAQUERYS////////////////////////////////////////////////////////*/
 
+@media (min-width: 768px) and (max-width: 1024px) {
 
+    .servicios-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+    }
 
+    .destinos-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+    }
 
+    .guias-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+    }
 
+    .testimonios-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+    }
 
+    .contacto-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+    }
 
-
-
-
-
-
-
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+        text-align: center; 
+    }
+}
 
 
 @media (max-width: 767px) {
@@ -686,89 +866,14 @@ margin-top: 10px;
         display: grid;
        grid-template-columns: 1fr;
    }
-}
 
-
-.contacto-grid{
+   .contacto-grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
+    grid-template-columns: 1fr;
+   }
 
-
-/* Contenedor principal */
-.formulario, .info-contacto {
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Títulos */
-.formulario label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: bold;
-    color: #333;
-}
-
-/* Entradas y Área de Texto */
-.formulario input[type="text"],
-.formulario input[type="email"],
-.formulario textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-}
-
-.formulario input:focus,
-.formulario textarea:focus {
-    border-color: #007bff;
-    outline: none;
-}
-
-/* Botón de Envío */
-.formulario button {
-    width: 100%;
-    padding: 12px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.formulario button:hover {
-    background-color: #0056b3;
-}
-
-
-.info-contacto h3 {
-    font-size: 1.4rem;
-    color: #333;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.info-contacto p {
-    font-size: 1rem;
-    color: #555;
-    text-align: center;
-}
-
-.info-contacto a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.info-contacto a:hover {
-    text-decoration: underline;
+   .footer-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+   }
 }

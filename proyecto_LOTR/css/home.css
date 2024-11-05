@@ -727,7 +727,7 @@ margin-top: 10px;
 
 footer {
     background-color: #333;
-    color: #fff;
+    color: #d4af37;;
     padding-top: 20px;
 }
 
@@ -750,7 +750,7 @@ footer {
 .footer-grid p {
     font-size: 14px;
     line-height: 1.6;
-    color: #ccc;
+    color: #d4af37;;
 }
 
 .footer-grid a {
@@ -759,7 +759,7 @@ footer {
 }
 
 .footer-grid a:hover {
-    color: inherit; 
+    color: #d3b964;; 
 }
 
 .social-media {
@@ -769,13 +769,13 @@ footer {
 }
 
 .social-media a {
-    color: #ccc;
+    color: #d4af37;
     font-size: 18px;
 }
 
 .pie {
     background-color: #222;
-    color: #bbb;
+    color: #d4af37;
     text-align: center;
     margin-top: 30px;
     padding: 10px 0;

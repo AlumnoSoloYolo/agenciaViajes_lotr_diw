@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <title>Artículo Completo</title>
+</head>
+<body class="bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]">
+  <!-- Header -->
+  <header class="flex flex-row justify-between items-center bg-black p-5">
+    <figure class="relative ml-5 w-[150px]">
+        <img class="logo w-full" src="images/logo-tierra-media.webp" alt="Logo de Tierra Media">
+        <span class="absolute top-[60px] left-[48px] text-[#A08926] font-bold">BLOG</span>
+    </figure>
+    <nav class="menu">
+      <ul class="flex flex-row items-center space-x-4">
+        <li class="relative flex items-center justify-center border-2 border-[#D4AF37] rounded-full transition-all group">
+          <a href="#home" class="text-[#d4af37] text-2xl p-5 block rounded-full transition-colors duration-300 hover:bg-[#0D4126] hover:text-white">
+            <i class="fas fa-home"></i>
+          </a>
+          <span class="absolute left-1/2 transform -translate-x-1/2 text-white bg-[#A08926] rounded-md px-2 py-1 text-lg opacity-0 transition-all duration-300 -translate-y-10 group-hover:opacity-100 group-hover:-translate-y-2 z-10">Inicio</span>
+        </li>
+        <!-- Repeat menu items for Categories, About, and Contact as in main page -->
+      </ul>
+    </nav>
+  </header>
+  <div class="separador h-[3px] bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]"></div>
+
+  <!-- Article Content -->
+  <main class="py-10 px-5 bg-[#1E1D1D] text-gray-200 max-w-3xl mx-auto">
+    <!-- Article Header -->
+    <section class="mb-10">
+      <h1 class="text-4xl text-[#D4AF37] mb-4">Título del Artículo Completo</h1>
+      <div class="text-sm text-gray-500 mb-4">
+        <p>Por Elfo_migrante • 01 de Enero, 2024 • Categoría: Aventuras</p>
+      </div>
+      <img class="w-full rounded-lg mb-4" src="images/featured-image.jpg" alt="Imagen Destacada">
+    </section>
+    
+    <!-- Article Body -->
+    <article class="text-lg leading-relaxed">
+      <p class="mb-4">Contenido completo del artículo. Este es un párrafo introductorio del artículo que se desarrollará en la Tierra Media, explorando temas de aventura, exploración, y vida en este mundo de fantasía...</p>
+      <h2 class="text-2xl text-[#D4AF37] mt-6 mb-2">Subtítulo Importante</h2>
+      <p class="mb-4">Desarrollo adicional del artículo con textos, imágenes, y videos relevantes para enriquecer la experiencia del lector.</p>
+      <img class="w-full rounded-lg mb-4" src="images/additional-image.jpg" alt="Imagen Adicional">
+      <video class="w-full rounded-lg my-4" controls>
+        <source src="videos/related-video.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de videos.
+      </video>
+    </article>
+
+    <!-- Comment Section -->
+    <section class="mt-10">
+      <h2 class="text-3xl text-[#D4AF37] mb-4">Deja un comentario</h2>
+      <form action="#" method="post" class="mb-8">
+        <input type="text" name="nombre" class="w-full p-3 mb-4 rounded-lg bg-gray-200 border border-gray-300" placeholder="Tu Nombre" required>
+        <textarea name="comentario" rows="5" class="w-full p-3 mb-4 rounded-lg bg-gray-200 border border-gray-300" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit" class="w-full py-3 text-[#D4AF37] bg-black border border-[#D4AF37] rounded-lg hover:bg-[#f5e1a4] hover:text-black transition">Publicar Comentario</button>
+      </form>
+
+      <!-- List of Comments -->
+      <div class="comments">
+        <h3 class="text-2xl text-[#A08926] mb-4">Comentarios</h3>
+        <div class="comment bg-gray-800 p-4 rounded-lg mb-4">
+          <p class="text-sm text-gray-500">Por Gandalf • 03 de Enero, 2024</p>
+          <p class="mt-2">Este artículo fue una lectura fascinante. ¡Gran trabajo en capturar la esencia de la Tierra Media!</p>
+        </div>
+        <!-- Repeat more comments as needed -->
+      </div>
+    </section>
+
+    <!-- Related Articles Section -->
+    <section class="mt-10">
+      <h2 class="text-3xl text-[#D4AF37] mb-4">Te Puede Interesar</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <article class="relative bg-[#1E1D1D] border border-[#A08926] rounded-lg shadow-lg">
+          <img class="w-full h-40 rounded-t-lg" src="images/rivendell.webp" alt="Artículo Relacionado">
+          <div class="p-5">
+            <h3 class="text-[#A08926] text-xl mb-2">Título de Artículo Relacionado</h3>
+            <p class="text-gray-300 mb-4">Breve descripción del artículo que puede captar el interés del lector...</p>
+            <a href="#" class="text-[#D4AF37] hover:underline">Leer más</a>
+          </div>
+        </article>
+        <!-- Repeat for more related articles -->
+      </div>
+    </section>
+  </main>
+  <div class="separador h-[3px] bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]"></div>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-8">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 my-1">
+        <div>
+            <p class="text-center md:text-center">&copy; 2024 Tierra Media Viajes. Todos los derechos reservados.</p>
+            <p class="text-center md:text-center">Diseño por Manuel Santamaría González.</p>
+        </div>
+        <div class="mt-4 md:mt-0 text-center">
+            <h3 class="text-xl mb-2">Síguenos en:</h3>
+            <div class="flex justify-center space-x-4">
+                <a href="https://facebook.com" target="_blank" class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="separador h-[3px] bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]"></div>
+    <div class="bg-black text-center py-4 mt-1">
+        <p>Este sitio utiliza cookies para mejorar la experiencia del usuario. Al continuar navegando, aceptas nuestra <a href="privacy-policy.html" class="underline text-black">política de privacidad</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -699,6 +699,9 @@ margin-top: 10px;
     background-color: #333d47;
 }
 
+.info-contacto h3 {
+    text-align: center;
+}
 
 .info-contacto p {
     font-size: 1rem;
@@ -788,6 +791,18 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
+    header figure{
+        margin-left: 0;
+        margin-bottom: 5px;
+        margin-right: 0px;
+    }
+
+
+    .menu li{
+        margin: 1px;
+       
+    }
+
     .servicios-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
@@ -840,7 +855,7 @@ footer {
 
     .menu li{
       
-        margin: 7px;
+        margin:1px;
        
     }
 

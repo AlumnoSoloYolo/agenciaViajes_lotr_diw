@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <title>Conoce a Bilbo Baggins</title>
+</head>
+<body class="bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]">
+  <!-- Header -->
+  <header class="flex flex-row justify-between items-center bg-black p-5">
+    <figure class="relative ml-5 w-[150px]">
+        <img class="logo w-full" src="images/logo-tierra-media.webp" alt="Logo de Tierra Media">
+        <span class="absolute top-[60px] left-[48px] text-[#A08926] font-bold">BLOG</span>
+    </figure>
+    <nav class="menu">
+      <ul class="flex flex-row items-center space-x-4">
+        <li class="relative flex items-center justify-center border-2 border-[#D4AF37] rounded-full transition-all group">
+          <a href="#home" class="text-[#d4af37] text-2xl p-5 block rounded-full transition-colors duration-300 hover:bg-[#0D4126] hover:text-white">
+            <i class="fas fa-home"></i>
+          </a>
+          <span class="absolute left-1/2 transform -translate-x-1/2 text-white bg-[#A08926] rounded-md px-2 py-1 text-lg opacity-0 transition-all duration-300 -translate-y-10 group-hover:opacity-100 group-hover:-translate-y-2 z-10">Inicio</span>
+        </li>
+        <!-- Repeat menu items for Categories, About, and Contact as in main page -->
+      </ul>
+    </nav>
+  </header>
+  <div class="separador h-[3px] bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]"></div>
+
+  <!-- Author Section -->
+  <main class="py-10 px-5 bg-[#1E1D1D] text-gray-200 max-w-3xl mx-auto">
+    <!-- About the Author -->
+    <section class="text-center mb-10">
+      <h1 class="text-4xl text-[#D4AF37] mb-4">Conoce a Bilbo Baggins</h1>
+      <img class="w-48 h-48 mx-auto rounded-full mb-4" src="images/bilbo-baggins.jpg" alt="Bilbo Baggins, el autor">
+    </section>
+
+    <!-- Author Biography -->
+    <section class="mb-10">
+      <h2 class="text-3xl text-[#A08926] mb-4">Sobre el Autor</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        Nacido en la Comarca y aventurero de corazón, <span class="font-bold">Bilbo Baggins</span> creció rodeado de historias sobre dragones y antiguas tierras.
+        Apasionado por explorar rincones olvidados de la Tierra Media y con un amor especial por los relatos y las leyendas,
+        Bilbo ha recorrido las montañas y los valles de este vasto mundo en busca de aventuras. 
+      </p>
+      <p class="text-lg leading-relaxed mb-4">
+        Su conexión con la magia de la Tierra Media lo ha llevado a compartir sus experiencias y descubrimientos con sus seguidores, siempre listo para relatar sus jornadas.
+      </p>
+    </section>
+
+    <!-- Social Media Links -->
+    <section class="mb-10 text-center">
+      <h2 class="text-3xl text-[#D4AF37] mb-4">Sígueme en Redes Sociales</h2>
+      <div class="flex justify-center space-x-6">
+        <a href="https://instagram.com/bilbo_inspirador" target="_blank" class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
+          <i class="fab fa-instagram text-3xl"></i>
+        </a>
+        <a href="https://twitter.com/bilbo_viajero" target="_blank" class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
+          <i class="fab fa-twitter text-3xl"></i>
+        </a>
+        <a href="https://facebook.com/bilboaventurero" target="_blank" class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
+          <i class="fab fa-facebook-f text-3xl"></i>
+        </a>
+        <a href="https://youtube.com/c/bilbosjourneys" target="_blank" class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
+          <i class="fab fa-youtube text-3xl"></i>
+        </a>
+      </div>
+      <a href="mailto:bilbo@tierramediaviajes.com" class="block mt-6 text-[#D4AF37] text-lg hover:underline">Contáctame directamente</a>
+    </section>
+
+    <!-- Notable Achievements -->
+    <section class="mb-10">
+      <h2 class="text-3xl text-[#A08926] mb-4">Logros Notables</h2>
+      <ul class="list-disc list-inside text-lg leading-relaxed">
+        <li>Autor de "Mi Viaje a Erebor y Más Allá", un libro sobre su encuentro con Smaug el Dragón.</li>
+        <li>Conferencista en la "Cumbre de Aventureros de Tierra Media" en Rivendel.</li>
+        <li>Galardonado con el premio "El Hobbit Valiente" en la Comarca.</li>
+      </ul>
+    </section>
+
+    <!-- Inspiring Quote -->
+    <section class="mb-10 text-center">
+      <blockquote class="italic text-2xl text-[#f5e1a4]">"La aventura está a solo un sueño de distancia para quienes se atreven a soñar."</blockquote>
+      <p class="mt-2 text-gray-500">— Bilbo Baggins</p>
+    </section>
+
+    <!-- Author's Popular Articles -->
+    <section>
+      <h2 class="text-3xl text-[#D4AF37] mb-4">Artículos Populares de Bilbo</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <article class="relative bg-[#1E1D1D] border border-[#A08926] rounded-lg shadow-lg">
+          <img class="w-full h-40 rounded-t-lg" src="images/erebor.jpg" alt="Erebor">
+          <div class="p-5">
+            <h3 class="text-[#A08926] text-xl mb-2">Mi Viaje a Erebor</h3>
+            <p class="text-gray-300 mb-4">Una historia de valor, desafíos, y descubrimientos en el reino de los enanos...</p>
+            <a href="#" class="text-[#D4AF37] hover:underline">Leer más</a>
+          </div>
+        </article>
+        <article class="relative bg-[#1E1D1D] border border-[#A08926] rounded-lg shadow-lg">
+          <img class="w-full h-40 rounded-t-lg" src="images/rivendell.webp" alt="Rivendel">
+          <div class="p-5">
+            <h3 class="text-[#A08926] text-xl mb-2">Secretos de Rivendel</h3>
+            <p class="text-gray-300 mb-4">Un vistazo a la misteriosa y mágica ciudad de los elfos...</p>
+            <a href="#" class="text-[#D4AF37] hover:underline">Leer más</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <div class="separador h-[3px] bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]"></div>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-8">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 my-1">
+        <div>
+            <p class="text-center md:text-center">&copy; 2024 Tierra Media Viajes. Todos los derechos reservados.</p>
+            <p class="text-center md:text-center">Diseño por Manuel Santamaría González.</p>
+        </div>
+        <div class="mt-4 md:mt-0 text-center">
+            <h3 class="text-xl mb-2">Síguenos en:</h3>
+            <div class="flex justify-center space-x-4">
+                <a href="https://facebook.com" target="_blank" class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="separador h-[3px] bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]"></div>
+    <div class="bg-black text-center py-4 mt-1">
+        <p>Este sitio utiliza cookies para mejorar la experiencia del usuario. Al continuar navegando, aceptas nuestra <a href="privacy-policy.html" class="underline text-black">política de privacidad</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>

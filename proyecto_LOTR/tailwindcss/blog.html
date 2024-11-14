@@ -1,148 +1,217 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
 </head>
+
 <body>
-    <div class="separador h-[3px] bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]"></div>
+    <div
+        class="separador h-[3px] bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]">
+    </div>
 
     <header class="flex flex-row justify-between items-center bg-black p-5">
         <figure class="relative ml-5 w-[150px]">
             <img class="logo w-full" src="images/logo-tierra-media.webp" alt="Logo de Tierra Media">
             <span class="absolute top-[60px] left-[48px] text-[#A08926] font-bold">BLOG</span>
         </figure>
-    
+
         <nav class="menu">
             <ul class="flex flex-row items-center space-x-4">
-                <li class="relative flex items-center justify-center border-2 border-[#D4AF37] rounded-full transition-all group">
-                    <a href="../home/home.html" class="text-[#d4af37] text-2xl p-5 block rounded-full transition-colors duration-300 hover:bg-[#0D4126] hover:text-white">
+                <li
+                    class="relative flex items-center justify-center border-2 border-[#D4AF37] rounded-full transition-all group">
+                    <a href="../home/home.html"
+                        class="text-[#d4af37] text-2xl p-5 block rounded-full transition-colors duration-300 hover:bg-[#0D4126] hover:text-white">
                         <i class="fas fa-home"></i>
                     </a>
-                    <span class="absolute left-1/2 transform -translate-x-1/2 text-white bg-[#A08926] rounded-md px-2 py-1 text-lg opacity-0 transition-all duration-300 -translate-y-10 group-hover:opacity-100 group-hover:-translate-y-2 z-10 writing-mode-vertical">Inicio</span>
+                    <span
+                        class="absolute left-1/2 transform -translate-x-1/2 text-white bg-[#A08926] rounded-md px-2 py-1 text-lg opacity-0 transition-all duration-300 -translate-y-10 group-hover:opacity-100 group-hover:-translate-y-2 z-10 writing-mode-vertical">Inicio</span>
                 </li>
-                <li class="relative flex items-center justify-center border-2 border-[#D4AF37] rounded-full transition-all group">
-                    <a href="#categories" class="text-[#d4af37] text-2xl p-5 block rounded-full transition-colors duration-300 hover:bg-[#0D4126] hover:text-white">
+                <li
+                    class="relative flex items-center justify-center border-2 border-[#D4AF37] rounded-full transition-all group">
+                    <a href="#categories"
+                        class="text-[#d4af37] text-2xl p-5 block rounded-full transition-colors duration-300 hover:bg-[#0D4126] hover:text-white">
                         <i class="fas fa-list"></i>
                     </a>
-                    <span class="absolute left-1/2 transform -translate-x-1/2 text-white bg-[#A08926] rounded-md px-2 py-1 text-lg opacity-0 transition-all duration-300 -translate-y-10 group-hover:opacity-100 group-hover:-translate-y-2 z-10 writing-mode-vertical">Categorías</span>
+                    <span
+                        class="absolute left-1/2 transform -translate-x-1/2 text-white bg-[#A08926] rounded-md px-2 py-1 text-lg opacity-0 transition-all duration-300 -translate-y-10 group-hover:opacity-100 group-hover:-translate-y-2 z-10 writing-mode-vertical">Categorías</span>
                 </li>
-                <li class="relative flex items-center justify-center border-2 border-[#D4AF37] rounded-full transition-all group">
-                    <a href="#about" class="text-[#d4af37] text-2xl p-5 block rounded-full transition-colors duration-300 hover:bg-[#0D4126] hover:text-white">
+                <li
+                    class="relative flex items-center justify-center border-2 border-[#D4AF37] rounded-full transition-all group">
+                    <a href="#about"
+                        class="text-[#d4af37] text-2xl p-5 block rounded-full transition-colors duration-300 hover:bg-[#0D4126] hover:text-white">
                         <i class="fas fa-info-circle"></i>
                     </a>
-                    <span class="absolute left-1/2 transform -translate-x-1/2 text-white bg-[#A08926] rounded-md px-2 py-1 text-lg opacity-0 transition-all duration-300 -translate-y-10 group-hover:opacity-100 group-hover:-translate-y-2 z-10 writing-mode-vertical">nosotros</span>
+                    <span
+                        class="absolute left-1/2 transform -translate-x-1/2 text-white bg-[#A08926] rounded-md px-2 py-1 text-lg opacity-0 transition-all duration-300 -translate-y-10 group-hover:opacity-100 group-hover:-translate-y-2 z-10 writing-mode-vertical">nosotros</span>
                 </li>
-                <li class="relative flex items-center justify-center border-2 border-[#D4AF37] rounded-full transition-all group">
-                    <a href="#contact" class="text-[#d4af37] text-2xl p-5 block rounded-full transition-colors duration-300 hover:bg-[#0D4126] hover:text-white">
+                <li
+                    class="relative flex items-center justify-center border-2 border-[#D4AF37] rounded-full transition-all group">
+                    <a href="#contact"
+                        class="text-[#d4af37] text-2xl p-5 block rounded-full transition-colors duration-300 hover:bg-[#0D4126] hover:text-white">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <span class="absolute left-1/2 transform -translate-x-1/2 text-white bg-[#A08926] rounded-md px-2 py-1 text-lg opacity-0 transition-all duration-300 -translate-y-10 group-hover:opacity-100 group-hover:-translate-y-2 z-10 writing-mode-vertical">Contacto</span>
+                    <span
+                        class="absolute left-1/2 transform -translate-x-1/2 text-white bg-[#A08926] rounded-md px-2 py-1 text-lg opacity-0 transition-all duration-300 -translate-y-10 group-hover:opacity-100 group-hover:-translate-y-2 z-10 writing-mode-vertical">Contacto</span>
                 </li>
             </ul>
         </nav>
-        
-        
-        
-        
-        
+
+
+
+
+
     </header>
-    
-    <div class="separador h-[3px] bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]"></div>
+
+    <div
+        class="separador h-[3px] bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]">
+    </div>
+
     <body>
-        
 
-    <!-- Hero Section -->
-    <section class="hero relative flex flex-col justify-center h-[560px] p-8 bg-cover bg-center" style="background-image: url('images/lord-of-the-rings-frodo-Cropped.avif');">
-        <div class="overlay-hero absolute inset-0 bg-black opacity-30"></div>
-        <h1 class="text-4xl text-[#D4AF37] relative z-10">Bienvenido a Nuestro Blog</h1>
-        <p class="text-3xl text-[#D4AF37] mt-20 relative z-10">Artículos Recientes y Contenido Atractivo</p>
-    </section>
 
-    <div class="separador h-[3px] bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]"></div>
+        <!-- Hero Section -->
+        <section class="hero relative flex flex-col justify-center h-[560px] p-8">
+            <!-- Imagen de fondo usando un elemento <img> -->
+            <img src="images/image1.jpg" alt="imagen hero" class="absolute inset-0 w-full h-full object-cover z-0">
 
-     <!-- Search Bar -->
-     <section class="py-10 bg-black">
-        <div class="max-w-2xl mx-auto text-center">
-            <h2 class="text-2xl text-[#A08926] mb-4">Buscar Artículos</h2>
-            <input type="text" class="w-full p-3 rounded-lg bg-gray-200 border border-gray-300" placeholder="Escribe tu búsqueda...">
+            <!-- Overlay oscuro encima de la imagen -->
+            <div class="overlay-hero absolute inset-0 bg-black opacity-30 z-10"></div>
+
+            <!-- Contenido principal del hero -->
+            <h1 class="text-4xl text-[#D4AF37] relative z-20">Bienvenido a Nuestro Blog</h1>
+            <p class="text-3xl text-[#D4AF37] mt-20 relative z-20">Artículos Recientes y Contenido Atractivo</p>
+        </section>
+
+        <div
+            class="separador h-[3px] bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]">
         </div>
-    </section>
 
-    <!-- Articles Section -->
-    <section id="articulos" class="py-10 px-5 bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]">
-        <h2 class="text-3xl text-center text-[#A08926] mb-10">Artículos Recientes</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            <!-- Card Example -->
-            <article class="relative bg-[#1E1D1D] border border-[#A08926] rounded-lg shadow-lg">
-                <img class="w-full h-48 rounded-t-lg" src="images/rivendell.webp" alt="Título del Artículo">
-                <div class="p-5">
-                    <h3 class="text-[#A08926] text-xl mb-2">La Vida Cotidiana de un Elfo en Rivendel</h3>
-                    <p class="text-gray-300 mb-4">En Rivendel, los elfos viven en armonía con la naturaleza, inmersos en la música y la poesía. Puedes escribir sobre cómo sería un día típico en Rivendel, explorando la cultura elfica, sus tradiciones y su conexión con la naturaleza.</p>
-                    <p class="text-gray-500 text-sm">Por <a href="author.html">Elfo_migrante</a> • 01 de Enero, 2024</p>
-                    <a href="article.html" class="inline-block mt-4 text-[#D4AF37] hover:underline">Leer más</a>
-                </div>
-            </article>
-            <!-- Repetir la tarjeta para cada artículo -->
-            <article class="relative bg-[#1E1D1D] border border-[#A08926] rounded-lg shadow-lg">
-                <img class="w-full h-48 rounded-t-lg" src="images/tesoros.jpg" alt="Título del Artículo 2">
-                <div class="p-5">
-                    <h3 class="text-[#A08926] text-xl mb-2">Cazadores de Tesoros: Buscar Reliquias en la Tierra Media</h3>
-                    <p class="text-gray-300 mb-4">un grupo de intrépidos cazadores de tesoros se embarca en la búsqueda de antiguas reliquias que cuentan la historia de civilizaciones perdidas, héroes olvidados y poderosos artefactos que han dado forma al mundo. Este artículo explora la fascinante vida de estos buscadores, sus motivaciones, los lugares que recorren y los desafíos que enfrentan en su travesía.</p>
-                    <p class="text-gray-500 text-sm">Por Autor • 02 de Febrero, 2024</p>
-                    <a href="#" class="inline-block mt-4 text-[#D4AF37] hover:underline">Leer más</a>
-                </div>
-            </article>
-            <!-- Agregar más artículos como el anterior -->
-        </div>
-    </section>
-
-   
-
-    <footer class="bg-black text-white py-8">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 my-1">
-            <div>
-                <p class="text-center md:text-center">&copy; 2024 Tierra Media Viajes. Todos los derechos reservados.</p>
-                <p class="text-center md:text-center">Diseño por Manuel Santamaría González.</p>
+        <!-- Search Bar -->
+        <section class="py-10 bg-black">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-2xl text-[#A08926] mb-4">Buscar Artículos</h2>
+                <input type="text" class="w-full p-3 rounded-lg bg-gray-200 border border-gray-300"
+                    placeholder="Escribe tu búsqueda...">
             </div>
-            <div class="mt-4 md:mt-0 text-center"> <!-- Agregado mt-4 para el margen superior -->
-                <h3 class="text-xl mb-2">Síguenos en:</h3>
-                <div class="flex justify-center space-x-4">
-                    <a href="https://facebook.com" target="_blank" class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://twitter.com" target="_blank" class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://instagram.com" target="_blank" class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
+        </section>
+
+        <!-- Articles Section -->
+        <section id="articulos"
+            class="py-10 px-5 bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]">
+            <h2 class="text-3xl text-center text-[#A08926] mb-10">Artículos Recientes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Card Example -->
+                <article
+                    class="relative bg-[#1E1D1D] border border-[#A08926] rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-300">
+                    <img class="w-full h-48 rounded-t-lg" src="images/gandalfCharla.webp" alt="Título del Artículo">
+                    <div class="p-5">
+                        <h3 class="text-[#A08926] text-xl mb-2">La visita de Gandalf</h3>
+                        <p class="text-gray-300 mb-4"> Gandalf y yo nos sentamos bajo un roble en el jardín
+                            de Bag End. Estábamos a solas, y el mago, como siempre, parecía tener algo importante que
+                            decir. Al principio, la
+                            conversación empezó de manera ligera. Habíamos hablado de mis viajes, de cómo las cicatrices
+                            de la guerra aún marcaban
+                            mi alma, y de cómo la Comarca, aunque pacífica, ya no se sentía como antes.</p>
+                        <p class="text-gray-500 text-sm">Por <a href="author.html">Frodo_bolson</a> • 01 de Enero, 2024
+                        </p>
+                        <a href="article.html" class="inline-block mt-4 text-[#D4AF37] hover:underline">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- otro ejemplo -->
+                <article
+                    class="relative bg-[#1E1D1D] border border-[#A08926] rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-300">
+                    <img class="w-full h-48 rounded-t-lg" src="images/rivendell.webp" alt="Título del Artículo">
+                    <div class="p-5">
+                        <h3 class="text-[#A08926] text-xl mb-2">La Vida Cotidiana de un Elfo en Rivendel</h3>
+                        <p class="text-gray-300 mb-4">En Rivendel, los elfos viven en armonía con la naturaleza,
+                            inmersos en la música y la poesía. Puedes escribir sobre cómo sería un día típico en
+                            Rivendel, explorando la cultura elfica, sus tradiciones y su conexión con la naturaleza.</p>
+                        <p class="text-gray-500 text-sm">Por <a href="#">Elfo_migrante</a> • 01 de Enero, 2024
+                        </p>
+                        <a href="#" class="inline-block mt-4 text-[#D4AF37] hover:underline">Leer más</a>
+                    </div>
+                </article>
+                <!-- Repetir la tarjeta para cada artículo -->
+                <article
+                    class="relative bg-[#1E1D1D] border border-[#A08926] rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-300">
+                    <img class="w-full h-48 rounded-t-lg" src="images/tesoros.jpg" alt="Título del Artículo 2">
+                    <div class="p-5">
+                        <h3 class="text-[#A08926] text-xl mb-2">Cazadores de Tesoros: Buscar Reliquias en la Tierra
+                            Media</h3>
+                        <p class="text-gray-300 mb-4">un grupo de intrépidos cazadores de tesoros se embarca en la
+                            búsqueda de antiguas reliquias que cuentan la historia de civilizaciones perdidas, héroes
+                            olvidados y poderosos artefactos que han dado forma al mundo. Este artículo explora la
+                            fascinante vida de estos buscadores, sus motivaciones, los lugares que recorren y los
+                            desafíos que enfrentan en su travesía.</p>
+                        <p class="text-gray-500 text-sm">Por Autor • 02 de Febrero, 2024</p>
+                        <a href="#" class="inline-block mt-4 text-[#D4AF37] hover:underline">Leer más</a>
+                    </div>
+                </article>
+                <!-- Agregar más artículos como el anterior -->
+            </div>
+        </section>
+
+
+
+        <footer class="bg-black text-white">
+            <div class="mb-1 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+                <!-- Columna 1 con menos padding -->
+                <div class="flex flex-col justify-center items-center text-center py-0 min-h-[50px]">
+                    <p>&copy; 2024 Tierra Media Viajes. Todos los derechos reservados.</p>
+                    <p>Diseño por Manuel Santamaría González.</p>
+                </div>
+
+                <!-- Columna 2 -->
+                <div class="flex flex-col justify-center items-center text-center py-0 min-h-[100px]">
+                    <h3 class="text-xl mb-1">Síguenos en:</h3>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://facebook.com" target="_blank"
+                            class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank"
+                            class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank"
+                            class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank"
+                            class="text-[#D4AF37] hover:text-[#f5e1a4] transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="separador h-[3px] bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]"></div>
-    
-        <div class="bg-black text-center py-4 mt-1">
-            <p>Este sitio utiliza cookies para mejorar la experiencia del usuario. Al continuar navegando, aceptas
-                nuestra <a href="privacy-policy.html" class="underline text-black">política de privacidad</a>.</p>
-        </div>
-        <div class="separador h-[3px] bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]"></div>
-    </footer>
-    
-    
-    
-    
-    
 
-</body>
+            <div
+                class="separador h-[3px] bg-gradient-to-r from-[#b2955b] via-[#f5e1a4] via-[#d4af37] via-[#f9d976] to-[#b2955b]">
+            </div>
+
+            <!-- Footer con más padding -->
+            <div class="bg-black text-center py-6 mt-1">
+                <p>Este sitio utiliza cookies para mejorar la experiencia del usuario. Al continuar navegando, aceptas
+                    nuestra <a href="privacy-policy.html" class="underline text-white">política de privacidad</a>.</p>
+            </div>
+        </footer>
+
+
+
+
+        <script src="js/carousel.js"></script>
+
+    </body>
 
 </html>
 
-    
+
 </body>
+
 </html>
